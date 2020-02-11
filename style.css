@@ -16,10 +16,6 @@ html,body{
   text-align: center;
 }
 
-
-
-
-
 #back{
   position: absolute;
   width: 100%;
@@ -34,6 +30,64 @@ html,body{
   color: white;
   font-weight: 500;
   font-size: 30px;
+}
+
+
+
+#bar1{
+  position: absolute;
+  width: 100%;
+  left: -100%;
+  height: 100%;
+  background-color: #FF3636;
+  z-index: 2;
+}
+#bar2{
+  position: absolute;
+  width: 100%;
+  left: -100%;
+  height: 100%;
+  background-color: #FF3636;
+  z-index: 2;
+}
+
+#bar3{
+  position: absolute;
+  width: 100%;
+  left: -100%;
+  height: 100%;
+  background-color: #FF3636;
+  z-index: 2;
+}
+
+#h1div{
+  position: absolute;
+  left: 20%;
+  top: 45%;
+  width: 900px;
+  height: 100px;
+  overflow: hidden;
+  /* background-color: antiquewhite; */
+}
+
+#h2div{
+  position: absolute;
+  left: 20%;
+  top: 65%;
+  overflow: hidden;
+  width: 400px;
+  height: 40px;
+  /* background-color: aquamarine; */
+}
+
+#h4div{
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  width: 150px;
+  height: 35px;
+  /* background-color: #D9E830; */
+  overflow: hidden;
 }
 
 #colorred{
@@ -64,10 +118,11 @@ html,body{
 
 #content h1{
   position: absolute;
-  top: 43%;
-  left: 20%;
+  /* top: 43%;
+  left: 20%; */
   font-size: 40px;
   font-weight: 700;
+  left: -100%;
 }
 
 #content h4{
@@ -75,8 +130,9 @@ html,body{
   font-weight: 500;
   font-size: 20px;
   position: absolute;
-  top: 30%;
-  left: 20%;
+  left: -100%;
+  /* top: 30%;
+  left: 20%; */
 }
 
 #content h2{
@@ -84,8 +140,9 @@ html,body{
   font-size: 22px;
   font-weight: 400;
   position: absolute;
-  left: 20%;
-  top: 67%;
+  left: -100%;
+  /* left: 20%;
+  top: 67%; */
 }
 
 #sidescroll{

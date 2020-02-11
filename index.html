@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Saptarshi Samaddar</title>
+    <title>Document</title>
 </head>
 <body>
         <div id="back">  
@@ -27,9 +27,12 @@
                 </div>
             </div>
             <div id="content">
+                <div id="h4div">
                 <h4><span id="colorred">&lt;Lets begin / &gt;</span></h4>
-                <h1>Hi, My name is <span id="colorred">Saptarshi Samaddar</span> <BR> I <i>am</i> a <span id="change">  Hi  there</span></h2>
-                <h2>See what i got...</h2>
+                <div id="bar1"></div>
+                </div>
+               <div id="h1div"><h1>Hi, My name is <span id="colorred">Saptarshi Samaddar</span> <BR> I <i>am</i> a <span id="change">  Hi  there</span></h2><div id="bar2"></div></div> 
+                <div id="h2div"><h2>See what i got...</h2><div id="bar3"></div></div>
             </div>  
             <div id="downarrow">
                 <i class="fa fa-arrow-down"></i>
@@ -276,11 +279,48 @@ changeText( 0 );
 
 
     </script>
-    <!-- <script>
-        var tl = new Timelinemax();
-        tl.fromTo('#img',)
-    </script> -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script>
+        var tl = new TimelineMax();
+        tl
+        .fromTo('#bar1', 2 ,{
+            left : '-100%'
+        },{
+            left: '100%',
+            ease : Expo.easeInOut
+        })
+        .fromTo('#h4div h4', 2 ,{
+            left : '-100%'
+        },{
+            left: 0,
+            ease : Expo.easeInOut
+        },'-=2')
+        .fromTo('#bar2', 2 ,{
+            left : '-100%'
+        },{
+            left: '100%',
+            ease : Expo.easeInOut
+        },'-=1.7')
+        .fromTo('#h1div h1', 2 ,{
+            left : '-100%'
+        },{
+            left: 0,
+            ease : Expo.easeInOut
+        },'-=2')
+        .fromTo('#bar3', 2 ,{
+            left : '-100%'
+        },{
+            left: '100%',
+            ease : Expo.easeInOut
+        },'-=1.7')
+        .fromTo('#h2div h2', 2 ,{
+            left : '-100%'
+        },{
+            left: 0,
+            ease : Expo.easeInOut
+        },'-=2')
+    </script>
+   
 </body>
 </html>
